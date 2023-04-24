@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 /// first_screen.dart
+/// Just Greening Compone
 class FirstScreen extends StatelessWidget {
   const FirstScreen({Key? key}) : super(key: key);
 
