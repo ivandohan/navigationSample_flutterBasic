@@ -2,7 +2,9 @@ import 'package:flutter/material.dart';
 
 /// second_screen_with_data.dart
 class SecondScreenWithData extends StatelessWidget {
-  const SecondScreenWithData(String arguments, {Key? key}) : super(key: key);
+  final String data;
+
+  const SecondScreenWithData(this.data, {Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -11,6 +13,10 @@ class SecondScreenWithData extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
+            Text(data),
+            const SizedBox(
+              height: 16,
+            ),
             ElevatedButton(
               child: const Text('Back'),
               onPressed: () {
